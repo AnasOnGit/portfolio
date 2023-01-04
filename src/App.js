@@ -6,9 +6,11 @@ import Resume from "./components/Resume";
 import Git from "./components/Git";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Apps from "./components/Apps";
 import Footer from "./components/Footer";
 import LanguagesGallery from "./components/Languages";
-import myPicture from "./assets/picture/my-pic.jfif";
+import myPicture from "./assets/pic.jpg";
+import DataAnalysis from "./components/DataAnalysis";
 
 export const myPic = myPicture;
 function App() {
@@ -27,6 +29,8 @@ function App() {
           </div>
         </div>
         <Projects />
+        <Apps />
+        <DataAnalysis />
         <LanguagesGallery />
         <Contact />
       </div>

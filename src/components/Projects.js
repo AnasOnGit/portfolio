@@ -10,6 +10,16 @@ function Projects() {
         <WindowsGallery>
           <GalleryItem>
             <Box
+              content="https://card4u.netlify.app"
+              title="Online Wishing Plateform"
+              IconName="Card4U"
+              isURL={true}
+              resizeMode={true}
+              width="100%"
+            />
+          </GalleryItem>
+          <GalleryItem>
+            <Box
               content="https://wishes4u.netlify.app"
               title="Online Wishing Plateform"
               IconName="E wishes"

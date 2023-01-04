@@ -131,11 +131,12 @@ function Languages({ children }) {
   );
 }
 
-const LanguagesGallery = () => {
+const DataAnalysis = () => {
   return (
-    <div className="languages-gallery-container">
-      <h3 className="heading-text">Programming Languages</h3>
-      <Languages>
+    <div className="languages-gallery-container" id="data-analysis">
+      <h3 className="heading-text">Data Analysis</h3>
+      <span className="grayed-out">No Public Project Found!</span>
+      {/* <Languages>
         <LanguageItem
           name="Javascript"
           percentage={85}
@@ -145,105 +146,9 @@ const LanguagesGallery = () => {
           img={jsIcon}
           color="var(--secondary-yellow-color)"
         />
-        <LanguageItem
-          name="R Language"
-          percentage={55}
-          detail="4 months experience."
-          lang="rlang"
-          username="AnasOnGit"
-          img={
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png"
-          }
-          color="var(--default-blue-color)"
-        />
-        <LanguageItem
-          name="GD Script"
-          percentage={65}
-          detail="5 months experience."
-          lang="gdscript"
-          username="AnasOnGit"
-          img={"https://godotengine.org/themes/godotengine/assets/og_image.png"}
-          color="var(--default-blue-color)"
-        />
-        <LanguageItem
-          name="SQL"
-          percentage={65}
-          detail="4 years experience."
-          lang="sql"
-          username="AnasOnGit"
-          img={
-            "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-          }
-          color="var(--default-blue-color)"
-        />
-        <LanguageItem
-          name="Node Js"
-          percentage={79}
-          detail="Over 3 years of experience in NodeJs. Projects:- Youtube bot to upload videos and community post, Sort YouTube by view, duration. More project based on nodejs can be found on my npm page"
-          lang="javascript"
-          username="AnasOnGit"
-          img={nodeIcon}
-          color="var(--default-green-color)"
-        />
-
-        <LanguageItem
-          name="React"
-          percentage={80}
-          detail="Over 2-3 years experience in React Js. This website is also made with React Js :)"
-          lang="javascript"
-          username="AnasOnGit"
-          img={reactIcon}
-          color="var(--default-blue-color)"
-        />
-        <LanguageItem
-          name="React Native"
-          percentage={78}
-          detail="Over a year experience in React Native. "
-          lang="javascript"
-          username="AnasOnGit"
-          img={reactNativeIcon}
-          color="var(--secondary-yellow-color)"
-        />
-
-        <LanguageItem
-          name="HTML"
-          percentage={95}
-          detail="Over 4 years of experience in using HTML."
-          lang="html"
-          username="AnasOnGit"
-          img={htmlIcon}
-          color="var(--default-orange-color)"
-        />
-        <LanguageItem
-          name="CSS"
-          percentage={80}
-          detail="Every styling, carousel and other things on this site are customs made with CSS."
-          lang="css"
-          username="AnasOnGit"
-          img={cssIcon}
-          color="var(--default-blue-color)"
-        />
-        <LanguageItem
-          name="Python"
-          percentage={70}
-          detail="Over 2-3 year experience."
-          lang="python"
-          username="AnasOnGit"
-          img={pythonIcon}
-          color="var(--default-red-color)"
-        />
-        <LanguageItem
-          name="PHP"
-          percentage={60}
-          detail="My first programming language."
-          lang="php"
-          username="SyedAnasIkhlas"
-          img={phpIcon}
-          color="var(--default-blue-color)"
-        />
-      </Languages>
+      </Languages> */}
     </div>
   );
 };
 
-export default LanguagesGallery;
+export default DataAnalysis;

@@ -118,6 +118,32 @@ const Nav = ({ navStyle, setIsOpen }) => {
       <div className="nav-item">
         <a
           className="nav-link"
+          href="#apps"
+          onClick={() => {
+            if (navStyle.includes("nav-menu")) {
+              setIsOpen(false);
+            }
+          }}
+        >
+          Apps
+        </a>
+      </div>
+      <div className="nav-item">
+        <a
+          className="nav-link"
+          href="#data-analysis"
+          onClick={() => {
+            if (navStyle.includes("nav-menu")) {
+              setIsOpen(false);
+            }
+          }}
+        >
+          Data Analysis
+        </a>
+      </div>
+      <div className="nav-item">
+        <a
+          className="nav-link"
           href="#contact"
           onClick={() => {
             if (navStyle.includes("nav-menu")) {

@@ -30,11 +30,17 @@ function AboutMe() {
       <div className="about-me-section">
         <div className="about-me-name">Syed Anas Ikhlas</div>
         <p className="about-me-description">
-          I am a self-taught web developer with over 4 years experience. You can
-          find me working with Javascript, React, React Native, Node JS, and
-          everything that is related to javascript. I love to learn new
+          Google Certified Data Anaysts and self taught web developer. I love to learn new
           technologies and solve problems.
         </p>
+        {//
+        // <p className="about-me-description">
+        //   I am a self-taught web developer with over 4 years experience. You can
+        //   find me working with Javascript, React, React Native, Node JS, and
+        //   everything that is related to javascript. I love to learn new
+        //   technologies and solve problems.
+        // </p>
+        }
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ function Resume() {
       <Box
         isURL={true}
         title="Resume"
-        content="https://drive.google.com/file/d/1t4T1QW_tUGHxkMuOiNW1QwUFOJ_dfe7k/preview"
+        content="https://drive.google.com/file/d/1gzvlhvLDkFuHdc5b9SVetBbWBEWV647T/preview"
         className="resume"
         width="100%"
         // height="600px"
