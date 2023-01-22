@@ -65,14 +65,16 @@
     position: absolute;
     z-index: 100;
     left: 3px;
-    top: 38%;
+    /* top: 38%; */
+    bottom: 0%;
 }
 
 .carousel-right-arrow {
     position: absolute;
     z-index: 100;
     right: 3px;
-    top: 38%;
+    /* top: 38%; */
+    bottom: 0%;
 }
 
 .carousel-right-arrow-line-one,
