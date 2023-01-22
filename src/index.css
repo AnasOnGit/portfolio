@@ -1,0 +1,219 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap'); */
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("./assets/Cuprum.ttf")
+}
+
+:root {
+    --dark-bg-color: #121212;
+    --dark-overlay-color: #1F1F1F;
+    --dark-gray-color: #969696;
+    --dark-white-color: #F1EFE5;
+    --yellow-color: #E8C61E;
+    --yellow-darker-color: #a98e06;
+    --red-color: #BE3939;
+    --red-darker-color: #992525;
+    --carousel-indicator-color: #d7d3d3;
+    --carousel-indicator-active-color: #565656;
+    /* spacings */
+    --spacing-horizontal: 16px;
+    --spacing: 12px;
+    --section-spacing: 30px;
+    --padding: 9px;
+    --border-radius: 16px;
+    --border-radius-btn: 5px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    /* background: #66645f; */
+    background-color: transparent;
+    padding: 4px;
+    margin: 24px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #777777;
+    border-radius: 50px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #474747;
+}
+
+* {
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--dark-bg-color);
+    color: var(--dark-white-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* background-color: var(--dark-bg-color); */
+}
+
+body {
+    background-color: var(--dark-bg-color);
+    margin: 0px;
+    overscroll-behavior-y: contain;
+}
+
+input,
+textarea,
+button,
+select,
+.carousel-left-arrow,
+.carousel-right-arrow,
+.clickable-div,
+a,
+li {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: inherit;
+}
+
+.section-seprator {
+    margin-bottom: 32px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-hover {
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.title-hover:hover::after {
+    content: attr(title);
+    position: absolute;
+    font-size: 13px;
+    background-color: var(--dark-gray-color);
+    padding: 5px;
+    border-radius: 12px;
+    bottom: 10;
+    right: 105%;
+    /* right: 0; */
+    min-width: 90px;
+    text-align: center;
+    transition: all 0.3 ease-in;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-full {
+    flex: 1;
+}
+
+.half-flex {
+    flex: 0.5;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.tag-line {
+    color: var(--dark-gray-color);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 5px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding)
+}
+
+.logo-grid img {
+    width: 90px;
+    height: 90px;
+    border-radius: var(--border-radius)
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: var(--border-radius-btn);
+    background-color: var(--dark-overlay-color);
+    text-decoration: none;
+    min-width: 70px;
+}
+
+.icon-text a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.icon-text svg {
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.disabled-color {
+    background-color: var(--dark-gray-color)!important;
+    /* background-color: red; */
+}
+
+@media screen and (max-width:525px) {
+    .logo-grid img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo-grid {
+        width: 80vw;
+    }
+}

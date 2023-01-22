@@ -1,0 +1,16 @@
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.carousel-item-container {
+    width: 350px;
+    margin-top: 12px;
+    /* background-color: red; */
+    /* height: 320px; */
+}
+
+.carousel-item-container.active {
+    margin-top: 0px;
+}

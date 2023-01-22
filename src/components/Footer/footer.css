@@ -1,0 +1,38 @@
+:root {
+    --social-media-icon-size: 12px;
+}
+
+footer {
+    /* background-color: var(--dark-grey); */
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+}
+
+.social-media-container {
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-overlay-color);
+    width: 277px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wrap {
+    margin: 12px 0px;
+}
+
+.social-media-link {
+    background-color: inherit;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.connect-title {
+    margin-top: 12px;
+}

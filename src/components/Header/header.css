@@ -1,0 +1,303 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.brand-name-header {
+    font-size: 27px;
+    /* font-weight: 400; */
+    /* flex: 0.3; */
+}
+
+.responsive-menu-icon {
+    background-color: var(--dark-white-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.responsive-menu-icon:hover {
+    background-color: #c7c5bb;
+}
+
+.menu-icon-line {
+    width: 50%;
+    height: 3px;
+    background-color: var(--dark-overlay-color);
+    margin: 1px 0px;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-icon-line.line-two {
+    width: 50%;
+}
+
+.responsive-menu-icon.open .line-one {
+    rotate: -45deg;
+    translate: 4px 10px;
+    width: 15px;
+}
+
+.responsive-menu-icon.open .line-two {
+    rotate: 90deg;
+    translate: 0px -2px;
+    width: 55%;
+}
+
+.responsive-menu-icon.open .line-three {
+    rotate: 45deg;
+    translate: -4px 0px;
+    width: 15px;
+}
+
+nav {
+    flex: 1;
+    background-color: var(--dark-bg-color);
+    z-index: 100;
+    /* width: 50%; */
+}
+
+.nav-close-trigger {
+    display: none;
+}
+
+ul.nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* gap: 3; */
+    align-items: center;
+    /* flex: 1; */
+}
+
+ul.nav-options li.nav-options-li,
+.nav-more-btn-group {
+    list-style: none;
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: var(--padding);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+ul.nav-options li {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+li a {
+    text-decoration: none;
+    background-color: transparent;
+    flex: 1;
+}
+
+.nav-more-btn-group {
+    width: 100%;
+    border-radius: 5px;
+}
+
+ul.nav-options li:hover,
+.nav-more-btn-group:hover {
+    background-color: #000;
+}
+
+ul.nav-options li.nav-options-li:has(.nav-more-btn-group) {
+    background-color: transparent;
+}
+
+
+/* li {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.nav-more-option-btn {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+ul.more-option {
+    /* remove */
+    transition: all 0.1s ease;
+    background-color: var(--dark-overlay-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: var(--padding);
+    border-radius: 5px;
+    min-width: 120px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    /* perspective: 1000px */
+    /* opacity: 0;
+    pointer-events: none; */
+    /* height: 0%; */
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+ul.more-option li {
+    background-color: var(--dark-overlay-color);
+    padding: var(--padding);
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.more-option li a {
+    text-align: left;
+    flex: 1;
+}
+
+ul.more-option li svg {
+    /* flex: 1; */
+}
+
+ul li svg {
+    margin-right: 5px;
+}
+
+ul.more-option li:hover {
+    border-radius: 5px;
+}
+
+@media screen and (width >=550px) {
+    .responsive-menu-icon {
+        display: none;
+    }
+    .header-menu {
+        display: flex;
+    }
+}
+
+@media screen and (width >=550px) {
+    .nav-more-option-btn:hover ul.more-option {
+        /* padding: var(--padding);
+        height: 100%;
+        overflow: auto; */
+        display: flex;
+        /* height: 100%; */
+        /* top: 100%; */
+        /* opacity: 1;
+        pointer-events: all; */
+    }
+}
+
+@media screen and (width <=550px) {
+    nav {
+        display: flex;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        flex: 1;
+        width: 100%;
+        z-index: 1000;
+        height: 50vh;
+        transition: all 0.3s ease-in-out;
+        box-shadow: -1px -1px 6px 0px #0000008a;
+        border-radius: var(--border-radius);
+        justify-content: center;
+        overflow: scroll;
+    }
+    .nav-close-trigger.open {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex: 1;
+        width: 100%;
+        z-index: 999;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.386);
+    }
+    nav.open {
+        display: flex;
+        bottom: 0;
+    }
+    nav.open::before {
+        position: absolute;
+        top: 0;
+        margin-top: 12px;
+        content: "";
+        width: 30px;
+        height: 5px;
+        border-radius: 20px;
+        background-color: var(--dark-white-color)
+    }
+    ul.nav-options {
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+        justify-content: flex-start;
+        padding-top: 32px;
+    }
+    ul.nav-options li.nav-options-li {
+        justify-content: flex-start;
+        padding: var(--padding);
+        width: 90%;
+        align-items: center;
+    }
+    ul.more-option.expand {
+        display: flex;
+    }
+    ul.more-option {
+        position: static;
+        display: none;
+        width: 90%;
+        margin: 0 auto;
+        /* opacity: 1;
+        pointer-events: all; */
+    }
+    .nav-more-btn-group {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 3px;
+    }
+    ul.nav-options li.nav-options-li:has(.nav-more-btn-group) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    /* ul.more-option:hover{} */
+    ul.more-option li a {
+        flex: 1;
+    }
+    ul.more-option li svg {
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+        /* flex: 0.1; */
+    }
+}

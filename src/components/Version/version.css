@@ -1,0 +1,73 @@
+.version-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: var(--padding);
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 40%);
+    height: 200px;
+}
+
+.version-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--dark-white-color);
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.version-btn:hover {
+    background-color: #d4d4d4;
+}
+
+.version-text {
+    color: var(--dark-overlay-color);
+    font-weight: 400;
+}
+
+.version-btn svg {
+    translate: -3px -1px;
+}
+
+.version-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.version-list li {
+    width: 100%;
+    background-color: var(--dark-overlay-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    margin-top: 5px;
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    transition: all 0.3;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+.version-list li:hover {
+    background-color: var(--carousel-indicator-active-color);
+}
+
+.version-list li a {
+    text-align: center;
+}
+
+@media screen and (width <=550px) {
+    .version-container {
+        width: 80%;
+    }
+}

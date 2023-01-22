@@ -1,0 +1,105 @@
+.hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: var(--section-spacing);
+    width: 90%;
+    margin-bottom: 0px;
+}
+
+.hero-bio-section {
+    text-align: left;
+    width: 100%;
+    flex: 1;
+}
+
+.hero-bio-section p {
+    font-size: 43px;
+}
+
+.hero-tag-line {
+    font-size: 19px !important;
+    /* margin: 0 auto; */
+    margin-top: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+}
+
+
+/* .tag-line {
+    line-height: 2px;
+} */
+
+.hero-pic-section {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    /* background-color: var(--dark-grey); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    position: relative;
+    background-color: transparent;
+}
+
+.logo-effect {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-size: cover;
+    filter: blur(30px);
+    border-radius: 50%;
+    /* background-color: #00D8FF; */
+    /* z-index: -1; */
+    /* background-image: var(--url); */
+}
+
+img.hero-pic {
+    /* box-shadow: 0px 0px 0px 0px #0000008a; */
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid #0000001a; */
+    border-radius: 50%;
+    z-index: 23;
+    padding: 12px;
+    background-color: transparent;
+    /* background-color: var(--dark-overlay-color); */
+}
+
+@media screen and (width>=521px) {
+    .hero-container {
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        /* width: 90%; */
+        /* margin: 0 auto; */
+    }
+    .hero-pic-section {
+        margin: 0 auto;
+    }
+    .hero-tag-line {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 520px) {
+    .hero-bio-section {
+        text-align: center;
+    }
+}
